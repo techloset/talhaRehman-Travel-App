@@ -3,8 +3,8 @@ import {PixelRatio} from 'react-native';
 
 const {width: SCREEN_WIDTH, height: SCREEN_HEIGHT} = Dimensions.get('window');
 
-const widthBaseScale = SCREEN_WIDTH / 414;
-const heightBaseScale = SCREEN_HEIGHT / 896;
+const widthBaseScale = SCREEN_WIDTH / 360;
+const heightBaseScale = SCREEN_HEIGHT / 800;
 
 function normalize(size, based = 'width') {
   const newSize =
