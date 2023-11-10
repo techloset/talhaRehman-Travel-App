@@ -10,13 +10,13 @@ const BookingMenu = () => {
       <View  >
         <ScrollView style={styles.container} horizontal showsHorizontalScrollIndicator={false} gap={20}>
         <View style={styles.menu}>
-            <Text style={styles.menuText}>Hotels</Text>
+            <Text style={styles.menuText} >Hotels</Text>
         </View>
         <View style={styles.menu}>
             <Text style={styles.menuText}>Foods</Text>
         </View>
         <View style={styles.menu}>
-            <Text style={styles.menuText}>Activities</Text>
+            <Text style={styles.menuText}>Activities</Text> 
         </View>
         <View style={styles.menu}>
             <Text style={styles.menuText}>Hotels</Text>
@@ -35,16 +35,16 @@ const styles = StyleSheet.create({
         flexDirection:"row",
         paddingLeft:pixelSizeVertical(20),
         paddingTop:pixelSizeVertical(26),
-        gap:20
+        gap:50,
     },
     menu:{
         display: 'flex',
         alignItems: 'center',
-        backgroundColor:"rgba(201, 212, 228, 1)",
+        backgroundColor:"rgba(255, 255, 255, 1)",
         borderRadius:100,
         paddingHorizontal:pixelSizeVertical(24),
         paddingVertical:pixelSizeVertical(10),
-        gap:20
+        marginLeft:pixelSizeVertical(20)
     },
     menuText:{
         fontSize:fontPixel(14),
