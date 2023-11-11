@@ -7,6 +7,7 @@ import HeartIcon from "../../assets/images/heartIcon.png"
 import ratio from '../../style/ratio'
 import StarIcon from "../../assets/images/starIcon.png"
 import BookingMenu from '../../components/BookingMenu'
+import ImageGallery from '../../components/ImageGallery'
 
 const { widthPixel, fontPixel, pixelSizeVertical } = ratio;
 const Booking = () => {
@@ -35,6 +36,7 @@ const Booking = () => {
         </View>
         <View style={styles.downContainer}>
           <BookingMenu/>
+          <ImageGallery/>
         </View>
       </View>
     </SafeAreaView>
