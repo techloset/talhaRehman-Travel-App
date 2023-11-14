@@ -18,7 +18,7 @@ const ImageGallery = () => {
             </View>
             <TouchableOpacity>
                 <View style={styles.button}>
-                    <Text>Continue</Text>
+                    <Text style={styles.buttonContent}>Continue</Text>
                 </View>
             </TouchableOpacity>
         </View>
@@ -35,7 +35,7 @@ const styles = StyleSheet.create({
         justifyContent: "space-between"
 
     },
-    secondMain: {
+    secondMain: { 
         marginHorizontal: pixelSizeVertical(20),
         marginTop:pixelSizeVertical(23),
         gap:20
@@ -58,13 +58,18 @@ const styles = StyleSheet.create({
         width:widthPixel(136),
         height:widthPixel(44),
         backgroundColor:"rgba(24, 192, 193, 1)",
-        color:"rgba(255, 255, 255, 1)",
         justifyContent:"center",
         alignContent:"center",
         alignItems:"center",
         alignSelf:"center",
         marginTop:pixelSizeVertical(40),
-        marginBottom:pixelSizeVertical(20)
+        marginBottom:pixelSizeVertical(120),
+        borderRadius:100
+    },
+    buttonContent:{
+        color:"rgba(255, 255, 255, 1)",
+        fontSize:fontPixel(15),
+        fontFamily:"Poppins-Medium"
     }
 
 })

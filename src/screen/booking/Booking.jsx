@@ -1,4 +1,4 @@
-import { StyleSheet, Text, View,SafeAreaView, Image } from 'react-native'
+import { StyleSheet, Text, View,SafeAreaView, Image, ScrollView } from 'react-native'
 import React from 'react'
 import BookingMain from "../../assets/images/BookingMain.png"
 import LeftIcon from "../../assets/images/leftIcon.png"
@@ -13,6 +13,7 @@ const { widthPixel, fontPixel, pixelSizeVertical } = ratio;
 const Booking = () => {
   return (
     <SafeAreaView>
+      <ScrollView>
       <View>
         <View style={styles.container}>
           <Image source={BookingMain} style={styles.mainImg} />
@@ -39,6 +40,7 @@ const Booking = () => {
           <ImageGallery/>
         </View>
       </View>
+      </ScrollView>
     </SafeAreaView>
   )
 }

@@ -1,4 +1,4 @@
-import { StyleSheet, Text, View , SafeAreaView , TextInput, Image,Button,TouchableOpacity } from 'react-native'
+import { StyleSheet, Text, View , SafeAreaView , TextInput, Image,Button,TouchableOpacity, ScrollView } from 'react-native'
 import React, {useState} from 'react'
 import ratio from '../style/ratio'
 import SearchIcon from "../assets/images/Search.png"
@@ -12,6 +12,7 @@ const SearchForm = () => {
     const [firstName, onChangeFirstName] = useState(''); 
   return (
     <SafeAreaView >
+       
         <View style={styles.container}>
             <View>
                 <View style={styles.formIcon}>
@@ -61,6 +62,7 @@ const SearchForm = () => {
                 </TouchableOpacity>
             </View>
         </View>
+      
     </SafeAreaView>
   )
 }
@@ -110,7 +112,7 @@ const styles = StyleSheet.create({
         backgroundColor:"rgba(84, 106, 131, 1)",
         display:"flex",
         justifyContent:"center",
-        alignItems:"center"
+        alignItems:"center",
     },
     ButtonText:{
         fontSize:fontPixel(14),
