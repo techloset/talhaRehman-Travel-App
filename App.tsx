@@ -4,7 +4,7 @@ import Booking from './src/screen/booking/Booking';
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import TabNavigation from './src/navigation/TabNavigation';
-TabNavigation
+
 const Stack = createNativeStackNavigator();
 const App = () => {
   return (
