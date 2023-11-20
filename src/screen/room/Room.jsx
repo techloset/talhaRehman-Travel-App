@@ -4,6 +4,7 @@ import ratio from '../../style/ratio'
 import { SafeAreaView } from 'react-native-safe-area-context';
 import RoomHeader from '../../components/RoomHeader';
 import RoomGallery from '../../components/RoomGallery';
+import RoomDetails from '../../components/RoomDetails';
 
 
 
@@ -14,6 +15,7 @@ const Room = () => {
       <View>
         <RoomHeader/>
         <RoomGallery/>
+        <RoomDetails/>
       </View>
     </SafeAreaView>
   )

@@ -4,7 +4,7 @@ import React from 'react'
 const RoomGallery = () => {
   return (
     <View>
-      <Text>RooomGallery</Text>
+      <Text>RoomGallery</Text>
     </View>
   )
 }
