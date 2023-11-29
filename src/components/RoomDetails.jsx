@@ -4,11 +4,24 @@ import ratio from '../style/ratio'
 import StarIcon from "../assets/images/starIcon.png"
 import PlaceIcon from "../assets/images/place.png"
 import Facilities1 from "../assets/images/facilities1.png"
+import Facilities2 from "../assets/images/Facilities2.png"
+import Facilities3 from "../assets/images/Facilities1.png"
+import Facilities4 from "../assets/images/Facilities1.png"
+
 import { Color, FontFamily } from '../style/GlobalStyle'
 
 
 const { widthPixel, fontPixel, pixelSizeVertical } = ratio;
 const RoomDetails = () => {
+
+    const facilitiesData = [
+        { id: 1, icon: Facilities1, text: 'Outdoor Pool' },
+        { id: 2, icon: Facilities2, text: '1 Bathtub' },
+        { id: 3, icon: Facilities3, text: 'Free Wi-Fi' },
+        { id: 4, icon: Facilities4, text: ' Free Breakfast' },
+        { id: 5, icon: Facilities2, text: 'Beach Acces' },
+        { id: 6, icon: Facilities1, text: 'Outdoor Pool ' },
+    ];
     return (
         <View>
             <View style={styles.container}>
@@ -45,46 +58,15 @@ const RoomDetails = () => {
                 <Text style={styles.facilitiesTitle}>
                     FACILITIES
                 </Text>
-                <View>
+                <View style={{justifyContent:"center", alignItems:"center"}}>
                     <ScrollView style={styles.facilitiesScroll} horizontal showsHorizontalScrollIndicator={false}>
-                        
+                        {facilitiesData.map((facility)=>(
                             <View style={styles.facilitiesDetails}>
-                                <Image source={Facilities1}></Image>
-                                <Text style={styles.facilitiesText}>Outdoor
-                                    Pool
-                                </Text>
-                            </View>
-                            <View style={styles.facilitiesDetails}>
-                                <Image source={Facilities1}></Image>
-                                <Text style={styles.facilitiesText}>Outdoor
-                                    Pool
-                                </Text>
-                            </View>
-                            <View style={styles.facilitiesDetails}>
-                                <Image source={Facilities1}></Image>
-                                <Text style={styles.facilitiesText}>Outdoor
-                                    Pool
-                                </Text>
-                            </View>
-                            <View style={styles.facilitiesDetails}>
-                                <Image source={Facilities1}></Image>
-                                <Text style={styles.facilitiesText}>Outdoor
-                                    Pool
-                                </Text>
-                            </View>
-                            <View style={styles.facilitiesDetails}>
-                                <Image source={Facilities1}></Image>
-                                <Text style={styles.facilitiesText}>Outdoor
-                                    Pool
-                                </Text>
-                            </View>
-                            <View style={styles.facilitiesDetails}>
-                                <Image source={Facilities1}></Image>
-                                <Text style={styles.facilitiesText}>Outdoor
-                                    Pool
-                                </Text>
-                            </View>
-
+                            <Image source={facility.icon}></Image>
+                            <Text style={styles.facilitiesText}>{facility.text}
+                            </Text>
+                        </View>
+                        ))}
                     </ScrollView>
                 </View>
             </View>
@@ -178,17 +160,18 @@ const styles = StyleSheet.create({
     facilitiesText:{
         fontSize: fontPixel(12),
         color: Color.black,
-        width:widthPixel(50)
+        width:widthPixel(70)
 
     },
     facilitiesDetails:{
-        justifyContent:"center",
-        gap: pixelSizeVertical(2),
+        justifyContent:"left",
+        gap: pixelSizeVertical(8),
+        marginRight: pixelSizeVertical(5),
+        alignItems: "left",
     },
     facilitiesScroll:{
         flexDirection:"row",
-        gap: pixelSizeVertical(17),
-
+        gap: pixelSizeVertical(7),
     }
 
 })
