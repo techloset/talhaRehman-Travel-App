@@ -3,6 +3,7 @@ import React from 'react'
 import ratio from '../style/ratio'
 import ProfilePic from "../assets/images/ProfilePic.svg"
 import NotificationIcon from "../assets/images/NotificationIcon.svg"
+import { Color, FontFamily } from '../style/GlobalStyle'
 
 
 
@@ -40,7 +41,7 @@ const styles = StyleSheet.create({
     },
     name:{
         fontSize:fontPixel(16),
-        fontFamily:"Poppins-SemiBold",
-        color:"#000000",
+        fontFamily: FontFamily.poppinsSemiBold,
+        color: Color.black,
     }
 })

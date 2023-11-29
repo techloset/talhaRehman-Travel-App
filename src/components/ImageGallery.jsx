@@ -3,6 +3,7 @@ import React from 'react'
 import ratio from '../style/ratio';
 import GalleryMain from "../assets/images/gallery1.png"
 import Gallery2 from "../assets/images/gallery2.png"
+import { Color, FontFamily } from '../style/GlobalStyle';
 
 const { widthPixel, fontPixel, pixelSizeVertical } = ratio;
 const ImageGallery = () => {
@@ -42,22 +43,22 @@ const styles = StyleSheet.create({
     },
     headings: {
         fontSize:fontPixel(14),
-        fontFamily:"Poppins-Medium",
+        fontFamily: FontFamily.poppinsMedium,
         lineHeight:20,
-        color:"rgba(0, 0, 0, 1)"
+        color: Color.black
     },
     para:{
         fontSize:fontPixel(14),
-        fontFamily:"Poppins-Regular",
+        fontFamily: FontFamily.poppinsRegular,
         color:"rgba(0, 0, 0, 0.6)"
     },
     readMore:{
-        color:"rgba(0, 0, 0, 1)"
+        color: Color.black
     },
     button:{
         width:widthPixel(136),
         height:widthPixel(44),
-        backgroundColor:"rgba(24, 192, 193, 1)",
+        backgroundColor: Color.buttonPrimary,
         justifyContent:"center",
         alignContent:"center",
         alignItems:"center",
@@ -67,9 +68,9 @@ const styles = StyleSheet.create({
         borderRadius:100
     },
     buttonContent:{
-        color:"rgba(255, 255, 255, 1)",
+        color: Color.white,
         fontSize:fontPixel(15),
-        fontFamily:"Poppins-Medium"
+        fontFamily: FontFamily.poppinsMedium
     }
 
 })

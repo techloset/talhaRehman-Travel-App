@@ -4,6 +4,7 @@ import ratio from '../style/ratio'
 import LeftIcon from "../assets/images/leftIcon.png"
 import CalanderIcon from "../assets/images/calanderIcon.png"
 import MenuIcon from "../assets/images/menuIcon.png"
+import { Color, FontFamily } from '../style/GlobalStyle'
 
 
 
@@ -30,7 +31,7 @@ export default RoomHeader
 
 const styles = StyleSheet.create({
   container:{
-    backgroundColor:"#546A83",
+    backgroundColor: Color.primary,
     flexDirection:"row",
     justifyContent:"space-between",
     alignContent:"center",
@@ -48,8 +49,8 @@ const styles = StyleSheet.create({
   },
   heading:{
     fontSize:fontPixel(20),
-    fontFamily:"Poppins-Medium",
-    color:"#fff"
+    fontFamily: FontFamily.poppinsMedium,
+    color: Color.white
 
   }
 })

@@ -3,6 +3,7 @@ import React from 'react'
 import banner from "../assets/images/MainImg.png"
 import ratio from '../style/ratio'
 import ReadMore from 'react-native-read-more-text';
+import { Color, FontFamily } from '../style/GlobalStyle';
 
 
 const { widthPixel, fontPixel, pixelSizeVertical } = ratio;
@@ -59,7 +60,7 @@ export default HomeContent
 
 const styles = StyleSheet.create({
     container: {
-        backgroundColor: "#D2DBEA",
+        backgroundColor: Color.secondary,
         borderRadius: 30,
         marginTop: pixelSizeVertical(17),
     },
@@ -69,15 +70,15 @@ const styles = StyleSheet.create({
     },
     headings:{
         fontSize:fontPixel(14),
-        fontFamily:"Poppins-Medium",
-        color:"#000000",
+        fontFamily: FontFamily.poppinsMedium,
+        color: Color.black,
         lineHeight:20,
         letterSpacing:0.1
     },
     para:{
-        color:"#625B71",
+        color: Color.dark,
         fontSize:fontPixel(14),
-        fontFamily:"Poppins-Regular",
+        fontFamily: FontFamily.poppinsRegular,
     }
 
 })

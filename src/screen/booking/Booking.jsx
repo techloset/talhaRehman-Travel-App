@@ -8,6 +8,7 @@ import ratio from '../../style/ratio'
 import StarIcon from "../../assets/images/starIcon.png"
 import BookingMenu from '../../components/BookingMenu'
 import ImageGallery from '../../components/ImageGallery'
+import { Color, FontFamily } from '../../style/GlobalStyle'
 
 const { widthPixel, fontPixel, pixelSizeVertical } = ratio;
 const Booking = () => {
@@ -79,13 +80,13 @@ const styles = StyleSheet.create({
   },
   baliHeading:{
     fontSize:fontPixel(34),
-    fontFamily:"Poppins-Regular",
-    color:"rgba(255, 251, 254, 1)"
+    fontFamily: FontFamily.poppinsRegular,
+    color: Color.light
   },
   indonesia:{
     fontSize:fontPixel(12),
-    fontFamily:"Poppins-Regular",
-    color:"rgba(255, 251, 254, 1)",
+    fontFamily:FontFamily.poppinsRegular,
+    color: Color.light,
 
   },
   rating:{
@@ -98,16 +99,16 @@ const styles = StyleSheet.create({
     paddingHorizontal:pixelSizeVertical(20),
     paddingVertical:pixelSizeVertical(5),
     borderRadius:25,
-    backgroundColor:"#fff"
+    backgroundColor: Color.white
   },
   ratingNumber:{
     fontSize:fontPixel(12),
-    fontFamily:"Poppins-SemiBold",
-    color:"rgba(0, 0, 0, 1)"
+    fontFamily: FontFamily.poppinsSemiBold,
+    color: Color.black
   },
   downContainer:{
     borderRadius:30,
-    backgroundColor:"#F2F5FA",
+    backgroundColor: Color.light2,
     paddingTop:pixelSizeVertical(10),
     paddingBottom:pixelSizeVertical(20),
     height:"50%",

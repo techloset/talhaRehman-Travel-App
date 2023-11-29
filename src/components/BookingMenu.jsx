@@ -1,6 +1,7 @@
 import { StyleSheet, Text, View,ScrollView } from 'react-native'
 import React from 'react'
 import ratio from '../style/ratio'
+import { Color, FontFamily } from '../style/GlobalStyle';
 
 
 const { widthPixel, fontPixel, pixelSizeVertical } = ratio;
@@ -40,7 +41,7 @@ const styles = StyleSheet.create({
     menu:{
         display: 'flex',
         alignItems: 'center',
-        backgroundColor:"rgba(255, 255, 255, 1)",
+        backgroundColor: Color.white,
         borderRadius:100,
         paddingHorizontal:pixelSizeVertical(24),
         paddingVertical:pixelSizeVertical(10),
@@ -48,8 +49,8 @@ const styles = StyleSheet.create({
     },
     menuText:{
         fontSize:fontPixel(14),
-        fontFamily:"Poppins-Medium",
+        fontFamily: FontFamily.poppinsMedium,
         lineHeight:20,
-        color:"rgba(0, 0, 0, 1)"
+        color: Color.black
     }
 })

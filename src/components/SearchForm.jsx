@@ -6,6 +6,7 @@ import FilterIcon from "../assets/images/Filter.png"
 import CalendarIcon from "../assets/images/calendar_today.png"
 import PeopleIcon from "../assets/images/People.png"
 import AdditionIcon from "../assets/images/Addition.png"
+import { Color , FontFamily } from '../style/GlobalStyle'
 
 const {widthPixel, fontPixel, pixelSizeVertical} = ratio;
 const SearchForm = () => {
@@ -83,10 +84,10 @@ const styles = StyleSheet.create({
         paddingVertical:pixelSizeVertical(10),
         paddingHorizontal:pixelSizeVertical(60),
         borderRadius:10,
-        borderColor:"#fff",
-        backgroundColor:"#fff",
+        borderColor: Color.white ,
+        backgroundColor:Color.white,
         fontSize:fontPixel(16),
-        fontFamily:"Poppins-Regular",
+        fontFamily: FontFamily.poppinsRegular,
         width:widthPixel(320)
     },
     formIcon:{
@@ -109,15 +110,15 @@ const styles = StyleSheet.create({
         width:widthPixel(136),
         height:widthPixel(44),
         borderRadius:20,
-        backgroundColor:"rgba(84, 106, 131, 1)",
+        backgroundColor: Color.primary,
         display:"flex",
         justifyContent:"center",
         alignItems:"center",
     },
     ButtonText:{
         fontSize:fontPixel(14),
-        fontFamily:"Poppins-Medium",
-        color:"#fff",
+        fontFamily: FontFamily.poppinsMedium,
+        color: Color.white,
         lineHeight:24,
     }
 })
