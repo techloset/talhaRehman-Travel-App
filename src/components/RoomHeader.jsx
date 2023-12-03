@@ -38,7 +38,6 @@ const styles = StyleSheet.create({
     alignItems:"center",
     paddingVertical:pixelSizeVertical(20),
     paddingHorizontal:pixelSizeVertical(16),
-
   },
   subContainer:{
     flexDirection:"row",

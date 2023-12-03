@@ -1,4 +1,4 @@
-import { StyleSheet, Text, View } from 'react-native'
+import { StyleSheet, Text, View , ScrollView } from 'react-native'
 import React from 'react'
 import ratio from '../../style/ratio'
 import { SafeAreaView } from 'react-native-safe-area-context';
@@ -12,11 +12,13 @@ const { widthPixel, fontPixel, pixelSizeVertical } = ratio;
 const Room = () => {
   return (
     <SafeAreaView>
+      <ScrollView showsVerticalScrollIndicator={false}>
       <View>
         <RoomHeader/>
         <RoomGallery/>
         <RoomDetails/>
       </View>
+      </ScrollView>
     </SafeAreaView>
   )
 }

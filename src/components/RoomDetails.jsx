@@ -3,7 +3,7 @@ import React from 'react'
 import ratio from '../style/ratio'
 import StarIcon from "../assets/images/starIcon.png"
 import PlaceIcon from "../assets/images/place.png"
-import Facilities1 from "../assets/images/facilities1.png"
+import Facilities1 from "../assets/images/Facilities1.png"
 import Facilities2 from "../assets/images/Facilities2.png"
 import Facilities3 from "../assets/images/Facilities1.png"
 import Facilities4 from "../assets/images/Facilities1.png"
