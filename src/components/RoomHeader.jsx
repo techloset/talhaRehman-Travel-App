@@ -1,4 +1,4 @@
-import { Image, StyleSheet, Text, View } from 'react-native'
+import { Image, StyleSheet, Text, View, TouchableOpacity } from 'react-native'
 import React from 'react'
 import ratio from '../style/ratio'
 import LeftIcon from "../assets/images/leftIcon.png"
@@ -13,7 +13,9 @@ const RoomHeader = () => {
   return (
     <View style={styles.container}>
       <View style={styles.subContainer}>
-        <Image source={LeftIcon}/>
+        <TouchableOpacity>
+        <Image source={LeftIcon} />
+        </TouchableOpacity>
         <Text style={styles.heading}>Booking</Text>
       </View>
       <View style={styles.subContainer}>

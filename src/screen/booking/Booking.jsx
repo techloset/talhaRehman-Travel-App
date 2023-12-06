@@ -1,4 +1,4 @@
-import { StyleSheet, Text, View,SafeAreaView, Image, ScrollView } from 'react-native'
+import { StyleSheet, Text, View,SafeAreaView, Image, ScrollView, TouchableOpacity } from 'react-native'
 import React from 'react'
 import BookingMain from "../../assets/images/BookingMain.png"
 import LeftIcon from "../../assets/images/leftIcon.png"
@@ -19,7 +19,9 @@ const Booking = () => {
         <View style={styles.container}>
           <Image source={BookingMain} style={styles.mainImg} />
           <View style={styles.header}>
+            <TouchableOpacity>
             <Image source={LeftIcon}/>
+            </TouchableOpacity>
             <View style={styles.share}>
               <Image source={ShareIcon}/>
               <Image source={HeartIcon}/>
