@@ -50,7 +50,8 @@ const styles = StyleSheet.create({
     para:{
         fontSize:fontPixel(14),
         fontFamily: FontFamily.poppinsRegular,
-        color:"rgba(0, 0, 0, 0.6)"
+        color: Color.black,
+        opacity:0.6
     },
     readMore:{
         color: Color.black

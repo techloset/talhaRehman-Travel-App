@@ -49,10 +49,7 @@ const Booking = () => {
 export default Booking
 
 const styles = StyleSheet.create({
-
-  container:{
-    // flex:1,
-  },
+  
   mainImg:{
     position:"absolute",
     width:"100%",
@@ -76,7 +73,6 @@ const styles = StyleSheet.create({
     marginTop:pixelSizeVertical(37),
     alignItems:"center",
     gap:pixelSizeVertical(8)
-    // alignContent:'center',
   },
   baliHeading:{
     fontSize:fontPixel(34),

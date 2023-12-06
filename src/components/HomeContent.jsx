@@ -9,14 +9,14 @@ import { Color, FontFamily } from '../style/GlobalStyle';
 const { widthPixel, fontPixel, pixelSizeVertical } = ratio;
 const _renderTruncatedFooter = (handlePress) => {
     return (
-      <Text style={{color:"#000", marginTop: 15}} onPress={handlePress}>
+      <Text style={{color: Color.black, marginTop: 15}} onPress={handlePress}>
         Read more
       </Text>
     );
-  }
+  } 
 const _renderRevealedFooter = (handlePress) => {
     return (
-      <Text style={{color:"#000", marginTop: 5}} onPress={handlePress}>
+      <Text style={{color: Color.black, marginTop: 5}} onPress={handlePress}>
         Show less
       </Text>
     );
@@ -24,7 +24,7 @@ const _renderRevealedFooter = (handlePress) => {
 const _handleTextReady = () => {
     return(
         <Text>
-            Hellofdgdgfdgfgfdgfdg
+            Hello
         </Text>
     )
   }
