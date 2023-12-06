@@ -3,7 +3,6 @@ import Home from '../screen/home/Home';
 import Booking from '../screen/booking/Booking';
 import Room from '../screen/room/Room';
 
-Booking
 const TabNavigation = () => {
   const Tab = createBottomTabNavigator();
   return (

@@ -43,10 +43,10 @@ const RoomDetails = () => {
             />
             <View style={styles.buttonContainer}>
                 <TouchableOpacity style={styles.buttonDetails}>
-                    <Text style={{ color: "rgba(255, 255, 255, 1)", fontFamily: "Poppins-Regular", fontSize: fontPixel(13) }}>Details</Text>
+                    <Text style={{ color: Color.white, fontFamily:FontFamily.poppinsRegular, fontSize: fontPixel(13) }}>Details</Text>
                 </TouchableOpacity>
                 <TouchableOpacity style={styles.buttonReviews}>
-                    <Text style={{ color: "rgba(0, 0, 0, 1)", fontFamily: "Poppins-Regular", fontSize: fontPixel(13) }}>Reviews</Text>
+                    <Text style={{ color: Color.black, fontFamily:FontFamily.poppinsRegular, fontSize: fontPixel(13) }}>Reviews</Text>
                 </TouchableOpacity>
             </View>
             <View style={styles.hotelIntro}>
@@ -126,7 +126,7 @@ const styles = StyleSheet.create({
         borderRadius: pixelSizeVertical(16),
         paddingHorizontal: pixelSizeVertical(20),
         paddingVertical: pixelSizeVertical(5),
-        backgroundColor: "rgba(24, 192, 193, 1)",
+        backgroundColor: Color.buttonPrimary,
         justifyContent: "center",
         alignItems: "center",
     },
@@ -134,7 +134,7 @@ const styles = StyleSheet.create({
         borderRadius: pixelSizeVertical(16),
         paddingHorizontal: pixelSizeVertical(20),
         paddingVertical: pixelSizeVertical(5),
-        backgroundColor: "rgba(212, 221, 236, 1)",
+        backgroundColor: Color.buttonSecondary,
         justifyContent: "center",
         alignItems: "center",
     },
@@ -145,7 +145,9 @@ const styles = StyleSheet.create({
     hotelIntroText: {
         fontFamily: FontFamily.poppinsRegular,
         fontSize: fontPixel(14),
-        color: "rgba(0, 0, 0, 0.6)"
+        color: Color.black,
+        opacity:0.6
+
     },
     facilities: {
         paddingHorizontal: pixelSizeVertical(20),

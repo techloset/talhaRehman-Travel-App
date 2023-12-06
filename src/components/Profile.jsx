@@ -5,9 +5,6 @@ import ProfilePic from "../assets/images/ProfilePic.svg"
 import NotificationIcon from "../assets/images/NotificationIcon.svg"
 import { Color, FontFamily } from '../style/GlobalStyle'
 
-
-
-
 const {widthPixel, fontPixel, pixelSizeVertical} = ratio;
 
 const Profile = () => {

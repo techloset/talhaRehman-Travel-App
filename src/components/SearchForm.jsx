@@ -9,6 +9,7 @@ import AdditionIcon from "../assets/images/Addition.png"
 import { Color , FontFamily } from '../style/GlobalStyle'
 
 const {widthPixel, fontPixel, pixelSizeVertical} = ratio;
+
 const SearchForm = () => {
     const [firstName, onChangeFirstName] = useState(''); 
   return (
@@ -22,7 +23,7 @@ const SearchForm = () => {
                 <TextInput  
                 style={styles.input}
                 placeholder='Location'
-                placeholderTextColor="#000000"
+                placeholderTextColor={Color.black}
                 keyboardType='default'
                 onChangeText={onChangeFirstName} 
                 />
@@ -37,7 +38,7 @@ const SearchForm = () => {
                 <TextInput  
                 style={styles.input}
                 placeholder='July 08 - July 15 '
-                placeholderTextColor="#000000"
+                placeholderTextColor={Color.black}
                 keyboardType='default'
                 onChangeText={onChangeFirstName} 
                 />
@@ -49,7 +50,7 @@ const SearchForm = () => {
                 <TextInput  
                 style={styles.input}
                 placeholder='2 Guests'
-                placeholderTextColor="#000000"
+                placeholderTextColor={Color.black}
                 keyboardType='default'
                 onChangeText={onChangeFirstName} 
                 />

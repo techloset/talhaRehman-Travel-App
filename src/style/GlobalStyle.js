@@ -7,7 +7,8 @@ export const Color ={
     darkGrey:"#7A7289",
     light : "#FFFBFE",
     light2:"#F2F5FA",
-    buttonPrimary:"#18C0C1"
+    buttonPrimary:"#18C0C1",
+    buttonSecondary:"#D4DDEC"
 }
 
 
