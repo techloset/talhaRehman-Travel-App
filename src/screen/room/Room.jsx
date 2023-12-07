@@ -24,7 +24,7 @@ const Room = ({navigation}) => {
           </Text>
           <TouchableOpacity>
                 <View style={styles.button}>
-                    <Text style={styles.buttonContent}>Continue</Text>
+                    <Text style={styles.buttonContent}>Book Now</Text>
                 </View>
             </TouchableOpacity>
         </View>
@@ -47,6 +47,7 @@ const styles = StyleSheet.create({
       marginTop: pixelSizeVertical(20),
       alignItems: "center",
       alignContent:"center",
+      marginBottom:100
   },
   price:{
     fontSize:fontPixel(34),
@@ -58,7 +59,7 @@ const styles = StyleSheet.create({
   },
   button:{
     width:widthPixel(136),
-    height:widthPixel(44),
+    height:widthPixel(48),
     backgroundColor: Color.buttonPrimary,
     justifyContent:"center",
     alignContent:"center",

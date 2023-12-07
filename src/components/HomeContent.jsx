@@ -32,7 +32,7 @@ const _handleTextReady = () => {
 const HomeContent = () => {
     return (
         <SafeAreaView>
-            <ScrollView keyboardDismissMode='on-drag'>
+            <ScrollView keyboardDismissMode='on-drag' showsVerticalScrollIndicator={false}>
             <View style={styles.container}>
                 <View>
                     <Image source={banner} />
@@ -63,6 +63,7 @@ const styles = StyleSheet.create({
         backgroundColor: Color.secondary,
         borderRadius: 30,
         marginTop: pixelSizeVertical(17),
+        marginBottom:110
     },
     content:{
         marginHorizontal:pixelSizeVertical(20),
