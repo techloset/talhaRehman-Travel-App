@@ -1,8 +1,8 @@
-import { StyleSheet, Text, View , SafeAreaView } from 'react-native'
 import React from 'react'
+import { SafeAreaView, StyleSheet, View } from 'react-native'
+import HomeContent from '../../components/HomeContent'
 import Profile from '../../components/Profile'
 import SearchForm from '../../components/SearchForm'
-import HomeContent from '../../components/HomeContent'
 
 const Home = () => {
   return (

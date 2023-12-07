@@ -1,9 +1,9 @@
-import { StyleSheet, Text, View, SafeAreaView, Image, ScrollView } from 'react-native'
-import React from 'react'
-import banner from "../assets/images/MainImg.png"
-import ratio from '../style/ratio'
+import React from 'react';
+import { Image, SafeAreaView, ScrollView, StyleSheet, Text, View } from 'react-native';
 import ReadMore from 'react-native-read-more-text';
+import banner from "../assets/images/MainImg.png";
 import { Color, FontFamily } from '../style/GlobalStyle';
+import ratio from '../style/ratio';
 
 
 const { widthPixel, fontPixel, pixelSizeVertical } = ratio;

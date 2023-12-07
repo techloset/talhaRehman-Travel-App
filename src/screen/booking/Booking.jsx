@@ -1,14 +1,14 @@
-import { StyleSheet, Text, View,SafeAreaView, Image, ScrollView, TouchableOpacity } from 'react-native'
 import React from 'react'
+import { Image, SafeAreaView, ScrollView, StyleSheet, Text, TouchableOpacity, View } from 'react-native'
 import BookingMain from "../../assets/images/BookingMain.png"
+import HeartIcon from "../../assets/images/heartIcon.png"
 import LeftIcon from "../../assets/images/leftIcon.png"
 import ShareIcon from "../../assets/images/shareIcon.png"
-import HeartIcon from "../../assets/images/heartIcon.png"
-import ratio from '../../style/ratio'
 import StarIcon from "../../assets/images/starIcon.png"
 import BookingMenu from '../../components/BookingMenu'
 import ImageGallery from '../../components/ImageGallery'
 import { Color, FontFamily } from '../../style/GlobalStyle'
+import ratio from '../../style/ratio'
 
 const { widthPixel, fontPixel, pixelSizeVertical } = ratio;
 const Booking = () => {

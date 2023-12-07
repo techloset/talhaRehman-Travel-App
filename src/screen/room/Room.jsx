@@ -1,11 +1,11 @@
-import { StyleSheet, Text, View , ScrollView , TouchableOpacity } from 'react-native'
-import React from 'react'
-import ratio from '../../style/ratio'
+import React from 'react';
+import { ScrollView, StyleSheet, Text, TouchableOpacity, View } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
-import RoomHeader from '../../components/RoomHeader';
-import RoomGallery from '../../components/RoomGallery';
 import RoomDetails from '../../components/RoomDetails';
+import RoomGallery from '../../components/RoomGallery';
+import RoomHeader from '../../components/RoomHeader';
 import { Color, FontFamily } from '../../style/GlobalStyle';
+import ratio from '../../style/ratio';
 
 
 
